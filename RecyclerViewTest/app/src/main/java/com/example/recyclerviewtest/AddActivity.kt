@@ -34,7 +34,7 @@ class AddActivity : AppCompatActivity(){
             val name = etn.text.toString()
             AllActivities.addActivity(this)
             if(fruitList.isEmpty()==false&&"群名:"+group +"\n  (创建人:"+ name+")"== fruitList.get(0).name.replace("\\n","\n",false)){
-                Toast.makeText(this,"相邻Item不可以相同哦！", Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"相邻Item不可以相同哦！", Toast.LENGTH_LONG).show();//相邻Item不能一样（附加题）
 
                        AlertDialog.Builder(this).apply {
                            setTitle("相邻Item不可以相同哦！")

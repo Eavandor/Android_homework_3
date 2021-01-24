@@ -37,14 +37,14 @@ class MainActivity : AppCompatActivity() {
     exit_button.setOnClickListener {
 
         AlertDialog.Builder(this).apply {
-            setTitle("给我100分好不好QAQ")
-            setMessage("（看在我做的这么辛苦的份上555555）")
+            setTitle("确定要退出吗？")
+            setMessage("附加题选了：相邻Item不能相同")
             setCancelable(false)
-            setPositiveButton("好") { dialog, which -> AllActivities.finishAll()
+            setPositiveButton("退出") { dialog, which -> AllActivities.finishAll()
 
             }
-            setNegativeButton("100分哪里够？1000！") { dialog,
-                                                 which -> AllActivities.finishAll()
+            setNegativeButton("再看看") { dialog,
+                                                 which ->
 
             }
             show()
@@ -74,14 +74,14 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.item3 -> {
                     AlertDialog.Builder(this).apply {
-                        setTitle("给我100分好不好QAQ")
-                        setMessage("（看在我做的这么辛苦的份上555555）")
+                        setTitle("确定要退出吗？")
+                        setMessage("附加题选了：相邻Item不能相同")
                         setCancelable(false)
-                        setPositiveButton("好") { dialog, which ->AllActivities.finishAll()
+                        setPositiveButton("退出") { dialog, which -> AllActivities.finishAll()
 
                         }
-                        setNegativeButton("100分哪里够？1000！") { dialog,
-                                                             which ->AllActivities.finishAll()
+                        setNegativeButton("再看看") { dialog,
+                                                   which ->
 
                         }
                         show()
